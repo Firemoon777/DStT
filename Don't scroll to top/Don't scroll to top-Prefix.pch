@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Don't scroll to top' target in the 'Don't scroll to top' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

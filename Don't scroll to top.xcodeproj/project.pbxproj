@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84B4760119B335CA00D407FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4760019B335CA00D407FD /* Foundation.framework */; };
+		84B4760C19B335CA00D407FD /* Don_t_scroll_to_top.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84B4760B19B335CA00D407FD /* Don_t_scroll_to_top.mm */; };
+		84B4761C19B3361C00D407FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4760019B335CA00D407FD /* Foundation.framework */; };
+		84B4761E19B3361C00D407FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4761D19B3361C00D407FD /* UIKit.framework */; };
+		84B4762019B3361C00D407FD /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4761F19B3361C00D407FD /* Preferences.framework */; };
+		84B4762B19B3361C00D407FD /* DStTBundleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B4762A19B3361C00D407FD /* DStTBundleController.m */; };
+		84B4763E19B336E000D407FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4761D19B3361C00D407FD /* UIKit.framework */; };
+		84B4764019B336F500D407FD /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4763F19B336F500D407FD /* libsubstrate.dylib */; };
+		84B4764219B33A7900D407FD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4764119B33A7900D407FD /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84B475FD19B335CA00D407FD /* Don't scroll to top.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "Don't scroll to top.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B4760019B335CA00D407FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84B4760519B335CA00D407FD /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		84B4760619B335CA00D407FD /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		84B4760819B335CA00D407FD /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		84B4760919B335CA00D407FD /* Don't scroll to top-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Don't scroll to top-Prefix.pch"; sourceTree = "<group>"; };
+		84B4760A19B335CA00D407FD /* Don_t_scroll_to_top.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Don_t_scroll_to_top.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		84B4760B19B335CA00D407FD /* Don_t_scroll_to_top.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Don_t_scroll_to_top.mm; sourceTree = "<group>"; };
+		84B4761019B335CA00D407FD /* Don_t_scroll_to_top.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Don_t_scroll_to_top.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/Don_t_scroll_to_top.plist; sourceTree = "<group>"; };
+		84B4761B19B3361C00D407FD /* DStTBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DStTBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B4761D19B3361C00D407FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84B4761F19B3361C00D407FD /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = Library/Frameworks/Preferences.framework; sourceTree = DEVELOPER_DIR; };
+		84B4762419B3361C00D407FD /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		84B4762519B3361C00D407FD /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		84B4762719B3361C00D407FD /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		84B4762819B3361C00D407FD /* DStTBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DStTBundle-Info.plist"; sourceTree = "<group>"; };
+		84B4762919B3361C00D407FD /* DStTBundleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DStTBundleController.h; sourceTree = "<group>"; };
+		84B4762A19B3361C00D407FD /* DStTBundleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DStTBundleController.m; sourceTree = "<group>"; };
+		84B4762F19B3361C00D407FD /* DStTBundle.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = DStTBundle.plist; path = Package/Library/PreferenceLoader/Preferences/DStTBundle.plist; sourceTree = "<group>"; };
+		84B4763219B3361C00D407FD /* DStTBundle.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = DStTBundle.plist; path = Package/Library/PreferenceBundles/DStTBundle.bundle/DStTBundle.plist; sourceTree = "<group>"; };
+		84B4763319B3361C00D407FD /* DStTBundleIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DStTBundleIcon.png; path = Package/Library/PreferenceBundles/DStTBundle.bundle/DStTBundleIcon.png; sourceTree = "<group>"; };
+		84B4763419B3361C00D407FD /* DStTBundleIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DStTBundleIcon@2x.png"; path = "Package/Library/PreferenceBundles/DStTBundle.bundle/DStTBundleIcon@2x.png"; sourceTree = "<group>"; };
+		84B4763919B3361C00D407FD /* ru.firemoon777.DStTBundle.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru.firemoon777.DStTBundle.plist; path = Package/var/mobile/Library/Preferences/ru.firemoon777.DStTBundle.plist; sourceTree = "<group>"; };
+		84B4763A19B3361C00D407FD /* DStTBundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DStTBundle-Prefix.pch"; sourceTree = "<group>"; };
+		84B4763F19B336F500D407FD /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		84B4764119B33A7900D407FD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84B475F919B335CA00D407FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B4764019B336F500D407FD /* libsubstrate.dylib in Frameworks */,
+				84B4763E19B336E000D407FD /* UIKit.framework in Frameworks */,
+				84B4760119B335CA00D407FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B4761719B3361C00D407FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B4764219B33A7900D407FD /* MessageUI.framework in Frameworks */,
+				84B4761C19B3361C00D407FD /* Foundation.framework in Frameworks */,
+				84B4762019B3361C00D407FD /* Preferences.framework in Frameworks */,
+				84B4761E19B3361C00D407FD /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84B475F219B335CA00D407FD = {
+			isa = PBXGroup;
+			children = (
+				84B4760219B335CA00D407FD /* Don't scroll to top */,
+				84B4762119B3361C00D407FD /* DStTBundle */,
+				84B475FF19B335CA00D407FD /* Frameworks */,
+				84B475FE19B335CA00D407FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84B475FE19B335CA00D407FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84B475FD19B335CA00D407FD /* Don't scroll to top.dylib */,
+				84B4761B19B3361C00D407FD /* DStTBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B475FF19B335CA00D407FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84B4764119B33A7900D407FD /* MessageUI.framework */,
+				84B4763F19B336F500D407FD /* libsubstrate.dylib */,
+				84B4760019B335CA00D407FD /* Foundation.framework */,
+				84B4761D19B3361C00D407FD /* UIKit.framework */,
+				84B4761F19B3361C00D407FD /* Preferences.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84B4760219B335CA00D407FD /* Don't scroll to top */ = {
+			isa = PBXGroup;
+			children = (
+				84B4760A19B335CA00D407FD /* Don_t_scroll_to_top.xm */,
+				84B4760B19B335CA00D407FD /* Don_t_scroll_to_top.mm */,
+				84B4760319B335CA00D407FD /* Package */,
+				84B4760719B335CA00D407FD /* Supporting Files */,
+			);
+			path = "Don't scroll to top";
+			sourceTree = "<group>";
+		};
+		84B4760319B335CA00D407FD /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				84B4760419B335CA00D407FD /* DEBIAN */,
+				84B4760D19B335CA00D407FD /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		84B4760419B335CA00D407FD /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				84B4760519B335CA00D407FD /* control.txt */,
+				84B4760619B335CA00D407FD /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		84B4760719B335CA00D407FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84B4760819B335CA00D407FD /* PackageVersion.plist */,
+				84B4760919B335CA00D407FD /* Don't scroll to top-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84B4760D19B335CA00D407FD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				84B4760E19B335CA00D407FD /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		84B4760E19B335CA00D407FD /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				84B4760F19B335CA00D407FD /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		84B4760F19B335CA00D407FD /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				84B4761019B335CA00D407FD /* Don_t_scroll_to_top.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		84B4762119B3361C00D407FD /* DStTBundle */ = {
+			isa = PBXGroup;
+			children = (
+				84B4762919B3361C00D407FD /* DStTBundleController.h */,
+				84B4762A19B3361C00D407FD /* DStTBundleController.m */,
+				84B4762219B3361C00D407FD /* Package */,
+				84B4762619B3361C00D407FD /* Supporting Files */,
+			);
+			path = DStTBundle;
+			sourceTree = "<group>";
+		};
+		84B4762219B3361C00D407FD /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				84B4762319B3361C00D407FD /* DEBIAN */,
+				84B4762C19B3361C00D407FD /* Library */,
+				84B4763519B3361C00D407FD /* var */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		84B4762319B3361C00D407FD /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				84B4762419B3361C00D407FD /* control.txt */,
+				84B4762519B3361C00D407FD /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		84B4762619B3361C00D407FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84B4762719B3361C00D407FD /* PackageVersion.plist */,
+				84B4762819B3361C00D407FD /* DStTBundle-Info.plist */,
+				84B4763A19B3361C00D407FD /* DStTBundle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84B4762C19B3361C00D407FD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				84B4762D19B3361C00D407FD /* PreferenceLoader */,
+				84B4763019B3361C00D407FD /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		84B4762D19B3361C00D407FD /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				84B4762E19B3361C00D407FD /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		84B4762E19B3361C00D407FD /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				84B4762F19B3361C00D407FD /* DStTBundle.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		84B4763019B3361C00D407FD /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				84B4763119B3361C00D407FD /* ___PACKAGENAME___.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		84B4763119B3361C00D407FD /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				84B4763219B3361C00D407FD /* DStTBundle.plist */,
+				84B4763319B3361C00D407FD /* DStTBundleIcon.png */,
+				84B4763419B3361C00D407FD /* DStTBundleIcon@2x.png */,
+			);
+			name = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		84B4763519B3361C00D407FD /* var */ = {
+			isa = PBXGroup;
+			children = (
+				84B4763619B3361C00D407FD /* mobile */,
+			);
+			name = var;
+			sourceTree = "<group>";
+		};
+		84B4763619B3361C00D407FD /* mobile */ = {
+			isa = PBXGroup;
+			children = (
+				84B4763719B3361C00D407FD /* Library */,
+			);
+			name = mobile;
+			sourceTree = "<group>";
+		};
+		84B4763719B3361C00D407FD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				84B4763819B3361C00D407FD /* Preferences */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		84B4763819B3361C00D407FD /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				84B4763919B3361C00D407FD /* ru.firemoon777.DStTBundle.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		84B475FA19B335CA00D407FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B4761819B3361C00D407FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		84B475FC19B335CA00D407FD /* Don't scroll to top */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B4761319B335CA00D407FD /* Build configuration list for PBXNativeTarget "Don't scroll to top" */;
+			buildPhases = (
+				84B475F719B335CA00D407FD /* ShellScript */,
+				84B475F819B335CA00D407FD /* Sources */,
+				84B475F919B335CA00D407FD /* Frameworks */,
+				84B475FA19B335CA00D407FD /* Headers */,
+				84B475FB19B335CA00D407FD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Don't scroll to top";
+			productName = "Don't scroll to top";
+			productReference = 84B475FD19B335CA00D407FD /* Don't scroll to top.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		84B4761A19B3361C00D407FD /* DStTBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B4763D19B3361C00D407FD /* Build configuration list for PBXNativeTarget "DStTBundle" */;
+			buildPhases = (
+				84B4761619B3361C00D407FD /* Sources */,
+				84B4761719B3361C00D407FD /* Frameworks */,
+				84B4761819B3361C00D407FD /* Headers */,
+				84B4761919B3361C00D407FD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DStTBundle;
+			productName = DStTBundle;
+			productReference = 84B4761B19B3361C00D407FD /* DStTBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84B475F319B335CA00D407FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 84B475F619B335CA00D407FD /* Build configuration list for PBXProject "Don't scroll to top" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84B475F219B335CA00D407FD;
+			productRefGroup = 84B475FE19B335CA00D407FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B475FC19B335CA00D407FD /* Don't scroll to top */,
+				84B4761A19B3361C00D407FD /* DStTBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84B475F719B335CA00D407FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		84B475FB19B335CA00D407FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+		84B4761919B3361C00D407FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B475F819B335CA00D407FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B4760C19B335CA00D407FD /* Don_t_scroll_to_top.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B4761619B3361C00D407FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B4762B19B3361C00D407FD /* DStTBundleController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84B4761119B335CA00D407FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		84B4761219B335CA00D407FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		84B4761419B335CA00D407FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Don't scroll to top/Don't scroll to top-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		84B4761519B335CA00D407FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Don't scroll to top/Don't scroll to top-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		84B4763B19B3361C00D407FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DStTBundle/DStTBundle-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				INFOPLIST_FILE = "DStTBundle/DStTBundle-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		84B4763C19B3361C00D407FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DStTBundle/DStTBundle-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				INFOPLIST_FILE = "DStTBundle/DStTBundle-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B475F619B335CA00D407FD /* Build configuration list for PBXProject "Don't scroll to top" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B4761119B335CA00D407FD /* Debug */,
+				84B4761219B335CA00D407FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B4761319B335CA00D407FD /* Build configuration list for PBXNativeTarget "Don't scroll to top" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B4761419B335CA00D407FD /* Debug */,
+				84B4761519B335CA00D407FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B4763D19B3361C00D407FD /* Build configuration list for PBXNativeTarget "DStTBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B4763B19B3361C00D407FD /* Debug */,
+				84B4763C19B3361C00D407FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84B475F319B335CA00D407FD /* Project object */;
+}
